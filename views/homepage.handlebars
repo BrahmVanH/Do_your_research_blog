@@ -1,0 +1,26 @@
+<header class="masthead" style="overflow: hidden;background: url(&quot;assets/img/djspix_superior.png&quot;);">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto position-relative">
+                <div class="site-heading">
+                    <h1 style="font-size: 56px;">The Do Your Research Blog</h1><span class="subheading">An open
+                        blog-spot for all things tech</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-10 col-lg-8">
+
+            {{#each posts as |post|}}
+            {{> post-preview-cards}}
+            {{/each}}
+
+            <div class="clearfix"><button class="btn btn-primary float-end" type="button">Older
+                    Posts&nbsp;⇒</button></div>
+        </div>
+    </div>
+</div>
