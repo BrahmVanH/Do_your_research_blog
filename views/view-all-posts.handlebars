@@ -1,0 +1,21 @@
+<header class="masthead" style="background-image: url('assets/img/post-bg.jpg');">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-lg-8 mx-auto position-relative">
+                <div class="post-heading">
+                    <h1>All Posts</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<article>
+    <div class="container">
+        <div class="row">
+            {{#each posts as |post|}}
+            {{> post-preview-cards}}
+            {{/each}}
+        </div>
+    </div>
+</article>
