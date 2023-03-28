@@ -1,13 +1,14 @@
 const router = require('express').Router();
 const { User } = require('../../models');
 
-router.post('/', async (req, res) => {
+router.post('/create-account', async (req, res) => {
   try {
     // async await function to create a new user in our database
     const userData = await User.create({
-      name: req.body.username,
+      first_name: req.body.userFirstName,
+      lase_name: req.body.userLastName,
       email: req.body.userEmail,
-      password: req.body.userPassword,
+      password: req.body.password,
     });
 
     // saving the input user data to session, marking user as logged in
